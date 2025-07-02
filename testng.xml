@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Entrata_coding_Test">
+    <test name="Setup Suite">
+        <classes>
+            <class name="org.Automation.Entrata.Test.SetUpTest"/>
+        </classes>
+    </test>
+
+    <test  name="Entrata_coding_Test">
+        <classes>
+            <class name="org.Automation.Entrata.Test.contactPageTest.ContactPageFillFormTest">
+                <methods>
+                    <include name="FillFormTest"/>
+                </methods>
+            </class>
+            <class name="org.Automation.Entrata.Test.homePageTest.HomePageTitleTest">
+                <methods>
+                    <include name="testHomepageTitle"/>
+                </methods>
+            </class>
+            <class name="org.Automation.Entrata.Test.productPageTest.ProductPageTitleTest">
+                <methods>
+                    <include name="productPageTest"/>
+                </methods>
+            </class>
+            <class name="org.Automation.Entrata.Test.solutionPageTest.SolutionPageTitleTest">
+                <methods>
+                    <include name="SolutionsPageTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
